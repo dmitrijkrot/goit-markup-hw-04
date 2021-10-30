@@ -237,11 +237,10 @@
     margin-right: 30px;
   }
 
-  .advantage-item-antenna::before {
+  .advantage-item::before {
     display: block;
     content: "";
     height: 120px;
-    background-image: url(../images/antenna.png);
     background-size: 75px 75 px;
     background-repeat: no-repeat;
     background-position: center;
@@ -250,43 +249,20 @@
     background-color: #F5F4FA;
   }
 
-  .advantage-item-clock::before {
-    display: block;
-    content: "";
-    height: 120px;
+  .icon-antenna::before {
+    background-image: url(../images/antenna.png);
+  }
+
+  .icon-clock::before {
     background-image: url(../images/clock.png);
-    background-size: 75px 75 px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: #F5F4FA;
   }
   
-  .advantage-item-diagram::before {
-    display: block;
-    content: "";
-    height: 120px;
+  .icon-diagram::before {
     background-image: url(../images/diagram.png);
-    background-size: 75px 75 px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: #F5F4FA;
   }
 
-  .advantage-item-astronaut::before {
-    display: block;
-    content: "";
-    height: 120px;
+  .icon-astronaut::before {
     background-image: url(../images/astronaut.png);
-    background-size: 75px 75 px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: #F5F4FA;
   }
 
   .advantage-title {
