@@ -229,6 +229,7 @@
   .advantage {
     display: flex;
   }
+
   .advantage-item {
     width: 270px;
   }
@@ -237,32 +238,12 @@
     margin-right: 30px;
   }
 
-  .advantage-item::before {
-    display: block;
-    content: "";
-    height: 120px;
-    background-size: 75px 75 px;
-    background-repeat: no-repeat;
-    background-position: center;
+  .adventage-icon {
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: #F5F4FA;
-  }
+    text-align: center;
 
-  .icon-antenna::before {
-    background-image: url(../images/antenna.png);
-  }
-
-  .icon-clock::before {
-    background-image: url(../images/clock.png);
-  }
-  
-  .icon-diagram::before {
-    background-image: url(../images/diagram.png);
-  }
-
-  .icon-astronaut::before {
-    background-image: url(../images/astronaut.png);
   }
 
   .advantage-title {
@@ -321,9 +302,11 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   .team-item:not(:last-child) {
     margin-right: 30px;
   }
+
   .team-name {
     font-weight: 500;
     font-size: 16px;
@@ -340,8 +323,49 @@
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-top: 10px;
+    margin-bottom: 16px;
   }
   
+  .social-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-item {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .social-icon {
+    fill: #AFB1B8;
+  }
+
+  .social-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-link:hover,
+  .social-link:focus {
+    background-color: var(--accent-color);
+  }
+
+  .social-link:hover .social-icon, .social-link:focus .social-icon {
+    fill: var(--white-color);
+  }
+
+  
+
   /*-------------------projects------------------*/
   .section {
     padding-top: 94px;
