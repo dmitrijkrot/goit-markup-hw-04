@@ -97,6 +97,8 @@ a {
 .filter-button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* ----------------------heder------------------- */
@@ -163,9 +165,12 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .adress-icon {
+  fill: var(--primary-text-color);
   margin-right: 10px;
 }
 
@@ -176,6 +181,11 @@ a {
 .adress-link:focus,
 .adress-link:hover {
   color: var(--accent-color);
+}
+
+.adress-link:hover .adress-icon,
+.adress-link:focus .adress-icon {
+  fill: var(--accent-color);
 }
 
 .adress-list {
@@ -369,16 +379,38 @@ a {
   display: flex;
 }
 
-.client-item {
-  padding: 16px 32px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.client-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.client-icon {
+  fill: #AFB1B8;
+}
+
+
+.client-link:hover, .client-link:focus {
+  border: 1px solid #2196F3;
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--accent-color);
+}
+
+
 
 /*-------------------projects------------------*/
 .section {
@@ -421,6 +453,15 @@ a {
   margin-bottom: 30px;
 }
 
+.projects-item:hover,
+.projects-item:focus {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
 .projects-container {
   padding-top: 20px;
   padding-left: 24px;
@@ -444,6 +485,14 @@ a {
   margin-top: 4px;
 }
 /*------------------footer------------------*/
+
+.footer-container {
+  display: flex;
+}
+
+.address-container {
+  margin-right: 70px;
+}
 
 .footer-hero {
   padding-top: 60px;
@@ -494,6 +543,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-bottom: 20px;
 }
 
 .connect-list {
@@ -517,7 +567,7 @@ a {
 .connect-link {
   width: 100%;
   height: 100%;
-  background-color: var(--primary-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: block;
   display: flex;
