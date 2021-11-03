@@ -105,7 +105,7 @@ a {
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px;
+  border-bottom: 1px solid #ECECEC;;
 }
 
 .header-nav {
@@ -413,10 +413,6 @@ a {
 
 
 /*-------------------projects------------------*/
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .filter-button.current {
   color: var(--white-color);
@@ -445,9 +441,6 @@ a {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   width: 370px;
-}
-
-.projects-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
@@ -460,7 +453,6 @@ a {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 
 .projects-container {
   padding-top: 20px;
@@ -487,6 +479,7 @@ a {
 /*------------------footer------------------*/
 
 .footer-container {
+  align-items: baseline;
   display: flex;
 }
 
